@@ -1,0 +1,73 @@
+{
+  "ModelName": "UserProfile",
+  "TableName": "user_profiles",
+  "ManytoMany": "False",
+  "Utillity": "False",
+  "ColDefinitions": [
+    {
+      "colName": "_seq",
+      "colDataType": "unsignedMediumInteger",
+      "colLength": 10,
+      "colNotNull": null,
+      "colModel": null,
+      "colParentAlias": null
+    },
+    {
+      "colName": "user_id",
+      "colDataType": "unsignedBigInteger",
+      "colLength": null,
+      "colNotNull": null,
+      "colModel": "User",
+      "colParentAlias": "user"
+    },
+    {
+      "colName": "created_date",
+      "colDataType": "datetime",
+      "colLength": "",
+      "colNotNull": "True",
+      "colModel": null,
+      "colParentAlias": null
+    },
+    {
+      "colName": "tel_no",
+      "colDataType": "string",
+      "colLength": "10",
+      "colNotNull": null,
+      "colModel": null,
+      "colParentAlias": null
+    },
+    {
+      "colName": "address",
+      "colDataType": "string",
+      "colLength": 200,
+      "colNotNull": null,
+      "colModel": null,
+      "colParentAlias": null
+    },
+    {
+      "colName": "default_site_id",
+      "colDataType": "unsignedBigInteger",
+      "colLength": null,
+      "colNotNull": null,
+      "colModel": "Site",
+      "colParentAlias": "default_site"
+    },
+    {
+      "colName": "created_by_user_ref",
+      "colDataType": "unsignedBigInteger",
+      "colLength": null,
+      "colNotNull": null,
+      "colModel": "User",
+      "colParentAlias": "created_by"
+    },
+    {
+      "colName": "last_modified_by_user_ref",
+      "colDataType": "unsignedBigInteger",
+      "colLength": null,
+      "colNotNull": null,
+      "colModel": "User",
+      "colParentAlias": "last_modified_by"
+    }
+  ],
+  "ChildDefinitions": []
+}
