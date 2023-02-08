@@ -61,30 +61,35 @@ if (`reading`is greater than 40 and repeates for 5 times) {
 }
 ```
 
-#### `devices {device_id (string 15), name (string 100)}`
+#### `devices` 
+`{device_id (string 15), name (string 100)}`
 ```
 1, 28376, 'Living Area - Door Lock'
 2, 5978, 'Kitchen - LPG Sensor'
 3, 64955, 'Mains Voltage'
 ```
-#### `readings {device_id (bigint), recorded_time (timestamp), value (string 100)}`
+#### `readings`
+`{device_id (bigint), recorded_time (timestamp), value (string 100)}`
 ```
 1, 28376, 2022-05-15 02:23:12, 1
 2, 28376, 2022-05-15 03:00:00, 0
 ```
-#### `conditions {name(string 30)}`
+#### `conditions`
+`{name(string 30)}`
 ```
 1, 'is'
 2, 'greater than'
 3, 'in between'
 ```
-#### `events {device_id (bigint), condition_id (bigint), condition_param_1 (string 30), condition_param_2 (string 30), condition_param_3 (string 30)}`
+#### `events`
+`{device_id (bigint), condition_id (bigint), condition_param_1 (string 30), condition_param_2 (string 30), condition_param_3 (string 30)}`
 ```
 1, 1, 1, '1', null, null
 2, 2, 2, '26', null, null
 3, 3, 3, '230', '240', null
 ```
-#### `event_actions {event_id (bigint), action_line_no (bigint), type (string 20), payload (string 1000)}`
+#### `event_actions`
+`{event_id (bigint), action_line_no (bigint), type (string 20), payload (string 1000)}`
 ```
 1, 1, 1, 'SMS', {to: '+94719319791', message: 'Living Area - Door Lock [28376] is Open'}
 2, 1, 2, 'Email', {to: 'lakmalp@gmail.com', subject: 'Living Area - Door Lock Alert', body: 'Living Area - Door Lock [28376] is Open'}
