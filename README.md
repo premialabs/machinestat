@@ -62,7 +62,7 @@ if (`reading`is greater than 40 and repeates for 5 times) {
 ```
 
 #### `devices` 
-`{device_id (string 15), name (string 100)}`
+`{node_id (string 15), name (string 100)}`
 ```
 1, 28376, 'Living Area - Door Lock'
 2, 5978, 'Kitchen - LPG Sensor'

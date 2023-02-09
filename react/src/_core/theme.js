@@ -55,7 +55,7 @@ const baseTheme = {
       disabled: " lightgray "
     },
     header: " border-b border-slate-100 ",
-    sideBar: " mr-1 ",
+    sideBar: " ",
     headerText: " text-gray-500 font-roboto text-xs leading-6 font-semibold ",
     bodyText: "antialiased font-publicSans font-medium text-gray-800 text-pxs antialiased leading-6 "
   },

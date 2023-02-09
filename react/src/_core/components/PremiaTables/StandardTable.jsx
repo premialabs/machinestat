@@ -334,7 +334,7 @@ const StandardTable = (props) => {
           </thead>
         </table>
         <div className="flex ">
-          <div className={" pr-2 bg-slate-50 " + (["md", "lg", "xl", "2xl", "3xl"].includes(viewPortBreakpoint) ? (props.sideBarButtons ? "block" : "hidden") : "hidden")}>
+          <div id="sidebar" className={" pr-2a bg-slate-50a " + (["md", "lg", "xl", "2xl", "3xl"].includes(viewPortBreakpoint) ? (props.sideBarButtons ? "block" : "hidden") : "hidden")}>
             <table style={{ width: cell_width }} className={theme.standardTable.sideBar + "  "}>
               <tbody>
                 <tr className={"h-9 " + (props.sideBarButtons ? "" : "hidden")}>
@@ -371,7 +371,7 @@ const StandardTable = (props) => {
               </tbody>
             </table>
           </div>
-          <div className="w-full overflow-hidden rounded-md border border-slate-100 ">
+          <div className="w-full overflow-hidden rounded-mda bordera border-slate-100 ">
             <table ref={tableRef}
               className="w-full"
             >
