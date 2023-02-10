@@ -1,0 +1,75 @@
+{"ModelName": "EventAction","TableName": "event_actions","ManytoMany": "False","Utillity": "False","ColDefinitions":[
+  {
+    "colName": "event_id",
+    "colDataType": "unsignedBigInteger",
+    "colLength": "",
+    "colNotNull": "False",
+    "colModel": "event",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "action_line_no",
+    "colDataType": "bigInteger",
+    "colLength": "",
+    "colNotNull": "True",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "type",
+    "colDataType": "string",
+    "colLength": "20",
+    "colNotNull": "False",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "payload",
+    "colDataType": "string",
+    "colLength": "1000",
+    "colNotNull": "False",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": null,
+    "colDataType": null,
+    "colLength": null,
+    "colNotNull": null,
+    "colModel": null,
+    "colParentAlias": null
+  }
+],"FndColDefinitions":[
+  {
+    "colName": "_seq",
+    "colDataType": "unsignedMediumInteger",
+    "colLength": "",
+    "colNotNull": "True",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "created_by_user_ref",
+    "colDataType": "unsignedBigInteger",
+    "colLength": "",
+    "colNotNull": "False",
+    "colModel": "User",
+    "colParentAlias": "created_by"
+  },
+  {
+    "colName": "last_modified_by_user_ref",
+    "colDataType": "unsignedBigInteger",
+    "colLength": "",
+    "colNotNull": "False",
+    "colModel": "User",
+    "colParentAlias": "last_modified_by"
+  },
+  {
+    "colName": null,
+    "colDataType": null,
+    "colLength": null,
+    "colNotNull": null,
+    "colModel": null,
+    "colParentAlias": null
+  }
+],"ChildDefinitions":[]} 
