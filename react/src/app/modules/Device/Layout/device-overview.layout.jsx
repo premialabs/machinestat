@@ -45,7 +45,7 @@ export default (props) => {
                 align: 'left',
                 length: 60,
                 decimals: 0,
-                visible: { 'xs': true, 'sm': true, 'md': true, 'lg': true, 'xl': true, '2xl': true, '3xl': true },
+                visible: { 'xs': false, 'sm': false, 'md': false, 'lg': false, 'xl': false, '2xl': false, '3xl': false },
                 autosum: false,
                 filter: false,
                 format: (rowIndex, id, value) => value

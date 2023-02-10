@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useContext, useRef, useState } from "react";
 import GlobalStateContext from "../../../_core/providers/GlobalStateContext";
 import DeviceOverviewLayout from "./Layout/device-overview.layout"
+import { random } from "lodash";
 
 export default () => {
     const containerRef = useRef();
@@ -11,11 +12,11 @@ export default () => {
     const [data, setData] = useState(
         [
 
-            { id: 2, _seq: 200, _line_no: 2, type: "Temperature", device_id: "6345", last_data: "2022-10-28 / 07:05:35", heartbeat: "online" },
-            { id: 1, _seq: 100, _line_no: 1, type: "Temperature", device_id: "983476", last_data: "2022-10-26 / 17:00:05", heartbeat: "fault" },
-            { id: 3, _seq: 300, _line_no: 3, type: "Temperature", device_id: "723987", last_data: "2022-10-28 / 07:05:35", heartbeat: "frozen" },
-            { id: 4, _seq: 400, _line_no: 4, type: "Temperature", device_id: "78348", last_data: "2022-10-28 / 07:05:35", heartbeat: "online" },
-            { id: 1, _seq: 100, _line_no: 1, type: "Temperature", device_id: "983476", last_data: "2022-10-28 / 07:05:35", heartbeat: "offline" },
+            { id: 2, _seq: 200, _line_no: 2, type: "Temperature", device_id: random(10000000, 99999999), last_data: "2022-10-28 / 07:05:35", heartbeat: "online" },
+            { id: 1, _seq: 100, _line_no: 1, type: "Temperature", device_id: random(10000000, 99999999), last_data: "2022-10-26 / 17:00:05", heartbeat: "fault" },
+            { id: 3, _seq: 300, _line_no: 3, type: "Temperature", device_id: random(10000000, 99999999), last_data: "2022-10-28 / 07:05:35", heartbeat: "frozen" },
+            { id: 4, _seq: 400, _line_no: 4, type: "Temperature", device_id: random(10000000, 99999999), last_data: "2022-10-28 / 07:05:35", heartbeat: "online" },
+            { id: 1, _seq: 100, _line_no: 1, type: "Temperature", device_id: random(10000000, 99999999), last_data: "2022-10-28 / 07:05:35", heartbeat: "offline" },
         ]
     );
 
@@ -61,7 +62,7 @@ export default () => {
             <Helmet>
                 <title>Device</title>
             </Helmet>
-            <div ref={containerRef} className="w-1/3">
+            <div ref={containerRef} className="w-1/2">
                 <DeviceOverviewLayout
                     pager={pager}
                     parent=""
