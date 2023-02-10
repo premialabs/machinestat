@@ -1,0 +1,83 @@
+{"ModelName": "Event","TableName": "events","ManytoMany": "False","Utillity": "False","ColDefinitions":[
+  {
+    "colName": "device_id",
+    "colDataType": "unsignedBigInteger",
+    "colLength": "",
+    "colNotNull": "True",
+    "colModel": "device",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "condition_id",
+    "colDataType": "unsignedBigInteger",
+    "colLength": "",
+    "colNotNull": "True",
+    "colModel": "condition",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "condition_param_1",
+    "colDataType": "string",
+    "colLength": "30",
+    "colNotNull": "False",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "condition_param_2",
+    "colDataType": "string",
+    "colLength": "30",
+    "colNotNull": "False",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "condition_param_3",
+    "colDataType": "string",
+    "colLength": "30",
+    "colNotNull": "False",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": null,
+    "colDataType": null,
+    "colLength": null,
+    "colNotNull": null,
+    "colModel": null,
+    "colParentAlias": null
+  }
+],"FndColDefinitions":[
+  {
+    "colName": "_seq",
+    "colDataType": "unsignedMediumInteger",
+    "colLength": "",
+    "colNotNull": "True",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "created_by_user_ref",
+    "colDataType": "unsignedBigInteger",
+    "colLength": "",
+    "colNotNull": "False",
+    "colModel": "User",
+    "colParentAlias": "created_by"
+  },
+  {
+    "colName": "last_modified_by_user_ref",
+    "colDataType": "unsignedBigInteger",
+    "colLength": "",
+    "colNotNull": "False",
+    "colModel": "User",
+    "colParentAlias": "last_modified_by"
+  },
+  {
+    "colName": null,
+    "colDataType": null,
+    "colLength": null,
+    "colNotNull": null,
+    "colModel": null,
+    "colParentAlias": null
+  }
+],"ChildDefinitions":[]} 

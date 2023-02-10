@@ -1,0 +1,67 @@
+{"ModelName": "Device","TableName": "devices","ManytoMany": "False","Utillity": "False","ColDefinitions":[
+  {
+    "colName": "device_id",
+    "colDataType": "bigInteger",
+    "colLength": "",
+    "colNotNull": "True",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "node_id",
+    "colDataType": "string",
+    "colLength": "15",
+    "colNotNull": "True",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "name",
+    "colDataType": "string",
+    "colLength": "100",
+    "colNotNull": "True",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": null,
+    "colDataType": null,
+    "colLength": null,
+    "colNotNull": null,
+    "colModel": null,
+    "colParentAlias": null
+  }
+],"FndColDefinitions":[
+  {
+    "colName": "_seq",
+    "colDataType": "unsignedMediumInteger",
+    "colLength": "",
+    "colNotNull": "True",
+    "colModel": "",
+    "colParentAlias": ""
+  },
+  {
+    "colName": "created_by_user_ref",
+    "colDataType": "unsignedBigInteger",
+    "colLength": "",
+    "colNotNull": "False",
+    "colModel": "User",
+    "colParentAlias": "created_by"
+  },
+  {
+    "colName": "last_modified_by_user_ref",
+    "colDataType": "unsignedBigInteger",
+    "colLength": "",
+    "colNotNull": "False",
+    "colModel": "User",
+    "colParentAlias": "last_modified_by"
+  },
+  {
+    "colName": null,
+    "colDataType": null,
+    "colLength": null,
+    "colNotNull": null,
+    "colModel": null,
+    "colParentAlias": null
+  }
+],"ChildDefinitions":[{"colHasMany":"Reading"}]} 

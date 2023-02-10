@@ -1,0 +1,51 @@
+{"ModelName": "condition","TableName": "conditions","ManytoMany": "False","Utillity": "False","ColDefinitions":[
+  {
+    "colName": "name",
+    "colDataType": "string",
+    "colLength": "30",
+    "colNotNull": "True",
+    "colModel": null,
+    "colParentAlias": null
+  },
+  {
+    "colName": null,
+    "colDataType": null,
+    "colLength": null,
+    "colNotNull": null,
+    "colModel": null,
+    "colParentAlias": null
+  }
+],"FndColDefinitions":[
+  {
+    "colName": "_seq",
+    "colDataType": "unsignedMediumInteger",
+    "colLength": null,
+    "colNotNull": "true",
+    "colModel": null,
+    "colParentAlias": null
+  },
+  {
+    "colName": "created_by_user_ref",
+    "colDataType": "unsignedBigInteger",
+    "colLength": null,
+    "colNotNull": null,
+    "colModel": "User",
+    "colParentAlias": "created_by"
+  },
+  {
+    "colName": "last_modified_by_user_ref",
+    "colDataType": "unsignedBigInteger",
+    "colLength": null,
+    "colNotNull": null,
+    "colModel": "User",
+    "colParentAlias": "last_modified_by"
+  },
+  {
+    "colName": null,
+    "colDataType": null,
+    "colLength": null,
+    "colNotNull": null,
+    "colModel": null,
+    "colParentAlias": null
+  }
+],"ChildDefinitions":[]} 
